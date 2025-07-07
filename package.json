@@ -56,13 +56,13 @@
   },
   "dependencies": {
     "concat-with-sourcemaps": "^1.1.0",
-    "jest": "^30.0.3",
     "lodash": "^4.17.21",
     "map-stream": "0.0.7",
     "through2": "^2.0.0"
   },
   "devDependencies": {
     "gulp": "^5.0.1",
+    "jest": "^30.0.4",
     "should": "*",
     "vinyl": "*"
   },
