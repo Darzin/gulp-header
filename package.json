@@ -59,8 +59,7 @@
     "jest": "^30.0.3",
     "lodash": "^4.17.21",
     "map-stream": "0.0.7",
-    "through2": "^2.0.0",
-    "source-map-support": "0.5.14"
+    "through2": "^2.0.0"
   },
   "devDependencies": {
     "gulp": "^5.0.1",
@@ -76,7 +75,7 @@
   },
   "overrides": {
     "lru-cache": "5.1.0",
-    "source-map-support": "$source-map-support",
+    "source-map-support": "0.5.14",
     "y18n": "4.0.3",
     "wrap-ansi": "3.0.1",
     "interpret": "1.3.0",
