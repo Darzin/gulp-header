@@ -56,13 +56,13 @@
   },
   "dependencies": {
     "concat-with-sourcemaps": "^1.1.0",
-    "jest": "^25.1.0",
+    "jest": "^30.0.3",
     "lodash": "^4.17.21",
     "map-stream": "0.0.7",
     "through2": "^2.0.0"
   },
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^5.0.1",
     "should": "*",
     "vinyl": "*"
   },
@@ -70,6 +70,23 @@
     "test": "jest --coverage",
     "publish-major": "npm version major && git push origin master && git push --tags",
     "publish-minor": "npm version minor && git push origin master && git push --tags",
-    "publish-patch": "npm version patch && git push origin master && git push --tags"
+    "publish-patch": "npm version patch && git push origin master && git push --tags",
+    "update-azure-credentials": "vsts-npm-auth -config .npmrc -force"
+  },
+  "overrides": {
+    "lru-cache": "5.1.0",
+    "source-map-support": "0.5.14",
+    "y18n": "4.0.3",
+    "wrap-ansi": "3.0.1",
+    "interpret": "1.3.0",
+    "rechoir": "0.7.1",
+    "cliui": "4.0.0",
+    "read-pkg-up": "3.0.0",
+    "path-type": "4.0.0",
+    "parse-json": "5.0.0",
+    "yargs-parser": {
+      ".": "5.0.1",
+      "camelcase": "4.0.0"
+    }
   }
 }

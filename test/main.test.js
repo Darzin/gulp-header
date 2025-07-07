@@ -1,4 +1,5 @@
-require('jest');
+//@ts-check
+const { describe, expect, beforeEach, it } = require('@jest/globals')
 const path = require('path');
 const stream = require('stream');
 const File = require('vinyl');
@@ -35,7 +36,7 @@ describe('gulp-header', () => {
 
   const getFakeFileReadStream = () => {
     const s = new stream.Readable({ objectMode: true });
-    s._read = () => {};
+    s._read = () => { };
     s.push('Hello world');
     s.push(null);
     return new File({
